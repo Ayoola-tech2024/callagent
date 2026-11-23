@@ -1,0 +1,45 @@
+{
+  "name": "callagent",
+  "version": "0.1.0",
+  "description": "Universal local Agent-to-Agent (A2A) MCP bridge for desktop coding agents",
+  "main": "dist/index.js",
+  "bin": {
+    "callagent": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ayoola-tech2024/callagent.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "agent-to-agent",
+    "a2a",
+    "opencode",
+    "claude-code",
+    "antigravity",
+    "multi-agent",
+    "orchestration"
+  ],
+  "author": "Ayoola-tech2024",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "start": "node dist/index.js",
+    "test": "node --test --import tsx tests/*.test.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
